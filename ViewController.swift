@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func savage(_ sender: UIButton) {
+   var alertController = UIAlertController(title:"YESSS GIRL", message: "Werrrkkk", preferredStyle: UIAlertController.Style.alert)
+        
+   alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    
+    @IBAction func notSavage(_ sender: UIButton) {
+        var alertController = UIAlertController(title:"Say What?!", message: "Take a deep breath and remember who you are girl!", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
     }
 
-
-}
 
